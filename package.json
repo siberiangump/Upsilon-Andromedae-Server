@@ -6,7 +6,7 @@
     "express": "x",
     "mongoose": "x",
     "body-parser": "1.12.2"
-  }
+  },
   "scripts": {
     "start": "node app.js"
   }
