@@ -51,7 +51,7 @@ function getAllEvent (request,response){
 functionDictionary['change_event']=change;
 function change (request,response){
 	if(request.body){
-		mapDataProxy.changeEvent(request.body.data,
+		mapDataProxy.changeEvent(request.body,
 			function(ev){
 				var userid="userid";
 				response.send({"status":"done","data":ev});
