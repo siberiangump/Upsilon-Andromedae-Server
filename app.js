@@ -32,5 +32,8 @@ app.all('/map_data/:funname',function(request,response) {
 })
 //
 
+app.set('port', (process.env.PORT || 5000 || 8888));
 
-app.listen(process.env.PORT || 8888);
+app.listen(app.get('port'), function() {
+  console.log("Node app is running at localhost:" + app.get('port'));
+});
