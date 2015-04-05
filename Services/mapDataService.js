@@ -14,8 +14,10 @@ functionDictionary['create']=createEvent;
 function createEvent (request,response){
 	if(request.body){
 		console.log(request.body);
-		mapDataProxy.changeEvent(request.body,function(){});
-		response.send({value:true});
+		mapDataProxy.changeEvent(request.body,function(){
+			response.send({value:true});
+		});
+		
 	}else response.send({value:false});
 }
 

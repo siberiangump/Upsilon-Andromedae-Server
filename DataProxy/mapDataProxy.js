@@ -65,7 +65,6 @@ exports.findEvent=function(id,handler){
 			})
 }
 
-
 exports.findEventByFields=function(query,handler){
 	Map.find(query, 
 		function (err, u) {
