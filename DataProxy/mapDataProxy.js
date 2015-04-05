@@ -38,6 +38,7 @@ exports.initProxy=function(mong){
 }
 
 exports.changeEvent=function(e,handler){
+	if(e._id==undefined)e._id="";
 	Map.findById(e._id, function (err, event){
 		if(!event){
 			event= new Map({name:e.name});
